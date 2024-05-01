@@ -206,7 +206,7 @@ All endpoints are secured by this Authorization API key; pass it in the HTTP req
 
 ```bash
 git clone https://github.com/HERO-EYE/land-parcel-management.git
-cd land-parcel-management
+cd land-parcel-management/Backend
 ```
 
 2. Install required Python packages:
@@ -252,8 +252,14 @@ Use tools like Postman or curl to test API endpoints manually.
 
 #### Create a new owner:
 * Method: POST
-* URL: http://localhost:8000/api/owner/
-* Body: JSON data with owner details
+* URL: http://localhost:8000/api/owner/add/
+* Body: 
+    - **username**: Owner's username
+    - **password**: Owner's password
+    - **name**: Owner's name
+    - **civil_id**: Owner's civil ID
+    - **contact_phone** (optional): Owner's contact phone
+    - **contact_email** (optional): Owner's contact phone
 
 #### Retrieve all land parcels:
 * Method: GET
@@ -261,8 +267,10 @@ Use tools like Postman or curl to test API endpoints manually.
 
 #### Update zoning regulations:
 * Method: PUT
-* URL: http://localhost:8000/api/zoning/{zoning_id}/
-* Body: JSON data with updated zoning details
+* URL: http://localhost:8000/api/zoning/{zoning_id}/update/
+* Body:
+    - **zoning_type**: Type of zoning regulations
+    - **regulations_details**: Details of zoning regulations
 
 #### Delete a land parcel:
 * Method: DELETE
