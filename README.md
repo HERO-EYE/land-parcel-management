@@ -51,13 +51,12 @@ The Land Parcel Management System uses the following database schema:
 
 The Land Parcel Management System provides the following API endpoints:
 
-### Authorization
+### Authentication
 
-All endpoints are secured by this Authorization API key; pass it in the HTTP request headers.
-- **Authorization**:
-  ```bash
-  eyJ0eXAiOiJKV1oiODZWEYm*4kdgra0n!z3t3*yea!d17bd
-  ```
+All endpoints are secured by this authentication token; pass it in the HTTP request headers.
+```Header
+ Authorization: eyJ0eXAiOiJKV1oiODZWEYm*4kdgra0n!z3t3*yea!d17bd
+```
 
 ### Owners Endpoints
 
@@ -247,6 +246,11 @@ python manage.py runserver
 ## Usage <a name="usage"></a>
 
 Use tools like Postman or curl to test API endpoints manually.
+
+- **Note** : The api is secured by authentication token. So you must add the following header in the request headers.
+```Header
+ Authorization: eyJ0eXAiOiJKV1oiODZWEYm*4kdgra0n!z3t3*yea!d17bd
+```
 
 ### Example API requests:
 
