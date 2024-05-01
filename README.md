@@ -272,7 +272,7 @@ Use tools like Postman or curl to test API endpoints manually.
 
 This system is deployed and hosted on this domain:
 ```bash
-[https://herodev.pythonanywhere.com/](https://herodev.pythonanywhere.com/)
+https://herodev.pythonanywhere.com/
 ```
 
 ### Demo API requests:
@@ -323,11 +323,12 @@ This system is deployed and hosted on this domain:
 A mobile application is developed for parcel lands owners to track their land parcels. Only android version is ready. 
 The installation is in the following link:
 ```bash
-[https://portal.testapp.io/apps/install/0qAqjmyWNzQz4/](https://portal.testapp.io/apps/install/0qAqjmyWNzQz4/)
+https://portal.testapp.io/apps/install/0qAqjmyWNzQz4/
 ```
 
 - You can use the following demo user to access the app.
-  ```bash
+  
+```bash
 username: user1
 password: user1
 ```
